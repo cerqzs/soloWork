@@ -2,7 +2,7 @@
 
 ## Problem
 
-Given the number of boys and girls on a class, return the percentage of boys. 
+Given the number of boys and girls on a class, return the percentage of boys and girls. 
 
 ## Example
 
@@ -37,6 +37,23 @@ END
 ```
 
 ### Aproach #02
+
+Only returning boys' percentage.
+
+```pseudocode
+START (boys, girls)
+    ED: 
+    boys, girls, total INTEIRO
+    boysPercentage REAL
+    
+    total <- boys + girls
+    boysPercentage <- boys / total
+    
+    RETURN boysPercentage
+END
+```
+
+### Aproach #03
 
 Only returning boys' percentage.
 Passing data as arguments to the function.
