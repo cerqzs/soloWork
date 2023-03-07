@@ -11,7 +11,7 @@ describe('Testing the Calculate Gender Percentage algorithm', () => {
         let expectededGirlsPercentage: number = 0.6;
 
         //Act
-        let [boysPercentage, girlsPercentage] = calculateGenderPercentage(6, 9);
+        let [boysPercentage, girlsPercentage] = calculateGenderPercentage(boys, girls);
 
         //Assert
         expect(boysPercentage).toBe(expectededBoysPercentage);
@@ -35,7 +35,7 @@ describe('Testing the Calculate Boys\' Percentage algorithm', () => {
         let expectededBoysPercentage: number = 0.4;
 
         //Act
-        let boysPercentage = calculateBoysPercentage(6, 9);
+        let boysPercentage = calculateBoysPercentage(boys, girls);
 
         //Assert
         expect(boysPercentage).toBe(expectededBoysPercentage);
@@ -57,7 +57,7 @@ describe('Testing the Calculate Girls\' Percentage algorithm', () => {
         let expectededGirlsPercentage: number = 0.6;
 
         //Act
-        let girlsPercentage = calculateGirlsPercentage(6, 9);
+        let girlsPercentage = calculateGirlsPercentage(boys, girls);
 
         //Assert
         expect(girlsPercentage).toBe(expectededGirlsPercentage);
