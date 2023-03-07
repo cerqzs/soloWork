@@ -2,6 +2,7 @@
  * Lab 01
  *
  * This lab is designed to help you get familiar with the TypeScript language.  You will be writing a few functions.
+ * Approach #1
  *
  * @param boys Number of boys in class.
  * @param girls Number of girls in class.
@@ -10,7 +11,7 @@
  */
 export function calculateGenderPercentage(boys: number, girls: number): [number, number] {
 
-    let total = boys + girls;
+    let total: number = boys + girls;
 
     if (total == 0)
         throw new RangeError('Boys and girls must not equal zero');
@@ -18,12 +19,16 @@ export function calculateGenderPercentage(boys: number, girls: number): [number,
     let boysPercentage = boys / total;
     let girlsPercentage = girls / total;
 
+    console.log("Boys Percentage: " + boysPercentage);
+    console.log("Girls Percentage: " + girlsPercentage);
     return [boysPercentage, girlsPercentage];
 }
 
 
 /**
  * Lab 01
+ *
+ * Approach #2
  *
  * This lab is designed to help you get familiar with the TypeScript language.  You will be writing a few functions.
  *
@@ -34,7 +39,7 @@ export function calculateGenderPercentage(boys: number, girls: number): [number,
  */
 export function calculateBoysPercentage(boys: number, girls: number): number {
 
-    let total = boys + girls;
+    let total: number = boys + girls;
 
     if (total == 0)
         throw new RangeError('Boys and girls must not equal zero');
@@ -47,6 +52,8 @@ export function calculateBoysPercentage(boys: number, girls: number): number {
 /**
  * Lab 01
  *
+ * Approach #3
+ *
  * This lab is designed to help you get familiar with the TypeScript language.  You will be writing a few functions.
  *
  * @param boys Number of boys in class.
@@ -56,7 +63,7 @@ export function calculateBoysPercentage(boys: number, girls: number): number {
  */
 export function calculateGirlsPercentage(boys: number, girls: number): number {
 
-    let total = boys + girls;
+    let total: number = boys + girls;
 
     if (total == 0)
         throw new RangeError('Boys and girls must not equal zero');

@@ -55,8 +55,7 @@ END
 
 ### Aproach #03
 
-Only returning boys' percentage.
-Passing data as arguments to the function.
+Only returning girls' percentage.
 
 ```pseudocode
 START (boys, girls)
@@ -65,9 +64,8 @@ START (boys, girls)
     boysPercentage, girlsPercentage REAL
     
     total <- boys + girls
-    boysPercentage <- boys / total
     girlsPercentage <- girls / total
     
-    RETURN boysPercentage, girlsPercentage
+    RETURN girlsPercentage
 END
 ```
