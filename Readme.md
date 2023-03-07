@@ -10,7 +10,7 @@ $ npm install
 
 # How to automatically compile the TypeScript files?
 
-## Without continuous watch
+## With continual watch
 
 ```shell
 $ tsc -w
@@ -27,7 +27,8 @@ $ node dist/js/<file>.js
 ```shell
 $ npm run test
 ```
-Continual approach:
+
+Using a continual approach
 
 ```shell
 $ npm run test-watch
